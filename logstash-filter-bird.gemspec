@@ -1,7 +1,7 @@
 Gem::Specification.new do |s|
   s.name = 'logstash-filter-bird'
-  s.version         = '0.9.1'
-  s.licenses = ['Apache License (2.0)']
+  s.version         = '0.9.2'
+  s.licenses = ['Apache-2.0']
   s.summary = "This filter provides routing information from BIRD from an IP address lookup(BGP Community, ASPATH, MED, Netblock). Meant to be added to netflow data, but can be used on any data that has an IP address"
   s.description = "This gem is a logstash plugin required to be installed on top of the Logstash core pipeline using $LS_HOME/bin/plugin install gemname. This gem is not a stand-alone program"
   s.authors = ["Elastic"]

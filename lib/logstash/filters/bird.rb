@@ -13,7 +13,7 @@ class LogStash::Filters::Bird < LogStash::Filters::Base
   #Path to bird.ctl file, default of /var/run/bird.ctl if not specified
   #Target field path for this data, default output is bgp.fieldname
   config :address, :validate => :string
-  config :path, :validate => :path, :default => '/var/run/bird.ctl'
+  config :path, :validate => :string, :default => '/var/run/bird.ctl'
   config :target, :validate => :string, :default => 'bgp'
   def register
     #Nothing
